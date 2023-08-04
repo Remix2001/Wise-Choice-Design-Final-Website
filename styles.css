@@ -1,0 +1,149 @@
+h1{
+    font-family: century gothic, 'Montserrat', calibri, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: #84288f;
+}
+
+h2{
+    font-family: century gothic, 'Montserrat', calibri, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #84288f;
+}
+h3{font-family: century gothic, 'Montserrat', calibri, sans-serif;
+    color: #84288f;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+
+.review1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    padding: 20px;
+}
+
+.review2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    padding: 20px;
+}
+
+.box {
+    background-image: url(homepage-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    font-size: 20px;
+    font-family: goudy old style, 'Crimson Text', times new roman, serif;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img[src^="wise-choice-design-logo.png"]{
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+nav{
+    font-family: century gothic, 'Montserrat', calibri, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:#111;
+}
+
+.active {
+    background-color: #005198;
+}
+
+footer{
+    font-family: goudy old style, 'Crimson Text', times new roman, serif;
+    font-size: 16px;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    }
+th,
+td{
+    border:3px solid #005198;
+    padding: 10px 15px;
+    text-align: left;
+}
+tbody trinth-child(even){
+    background: #f0f0f2;
+}
+.image-grid{
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid>img{
+    margin: 0;
+    width: 100%
+    height: 100%
+    object-fit: cover;
+}
+.image-grid-row-2{
+    grid-row:span 2;
+}
+@media screen and (max-width: 1024px){
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
